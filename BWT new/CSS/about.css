@@ -1,0 +1,235 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url("../IMAGES/black-patterns-4.jpg") repeat;
+    background-color: grey;
+    word-wrap: break-word;
+}
+
+nav {
+    width: 100%;
+    background: #001C49;
+    text-align: center;
+    z-index: 10;
+}
+
+nav img {
+    display: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 10px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+#active,
+nav ul li:hover {
+    background: rgb(14, 48, 102);
+}
+
+.sub_menu {
+    display: none;
+    z-index: 10;
+}
+
+nav ul li:hover .sub_menu {
+    display: block;
+    position: absolute;
+    background: #001C49;
+    margin-top: 35px;
+    margin-left: -20px;
+}
+
+nav ul li:hover .sub_menu ul li {
+    display: block;
+    background: transparent;
+    text-align: left;
+    border-bottom: 1px double darkslategray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0;
+}
+
+nav ul li:hover .sub_menu ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover .sub_menu ul li a {
+    text-transform: uppercase;
+}
+
+nav ul li:hover .sub_menu ul li a:hover {
+    color: #0076D2;
+}
+
+.hover span {
+    text-align: right;
+}
+
+.sub_menu2 {
+    display: none;
+}
+
+.hover:hover .sub_menu2 {
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    background: #001C49;
+    margin-top: -45px;
+    z-index: 10;
+}
+
+#main {
+    width: 80%;
+    margin: 10%;
+    margin-top: 5%;
+    background: white;
+    min-height: 500px;
+    border-radius: 40px;
+    box-shadow: 0 0 25px 15px black;
+}
+
+#main-img {
+    width: 70%;
+    height: 550px;
+    margin: 0% 15%;
+    animation: hueChange 5s linear 0s infinite alternate;
+}
+
+@keyframes hueChange {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(320deg);
+    }
+}
+
+#about-info {
+    width: 80%;
+    margin: 10%;
+    margin-top: 5%;
+    background: whitesmoke;
+    min-height: 500px;
+    border-radius: 40px;
+    display: inline-flex;
+    box-shadow: 0 0 25px 15px black;
+}
+
+#about-info:hover,
+#main:hover {
+    box-shadow: 0px 0px 8px 6px rgb(0, 174, 255);
+}
+
+article {
+    min-height: 300px;
+    width: 55%;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 4px grey, 0 0 9px 11px rgb(172, 172, 172);
+}
+
+aside {
+    width: 25%;
+    max-height: 700px;
+    padding: 2.5%;
+    margin: 2.5%;
+    border-radius: 30px;
+    box-shadow: 0 0 5px 4px grey, 0 0 9px 11px rgb(172, 172, 172);
+}
+
+article:hover,
+aside:hover {
+    box-shadow: 0px 0px 8px 6px rgb(0, 60, 255);
+}
+
+aside img {
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    filter: blur(3px);
+}
+
+aside img:hover {
+    filter: blur(0px);
+}
+
+aside h3 {
+    font-size: 100%;
+}
+
+section {
+    display: inline-block;
+    width: 45%;
+    min-height: 50px;
+    margin: 2.1%;
+}
+
+section:first-child {
+    width: 95%;
+    margin: 2.5%;
+    min-height: 50px;
+}
+
+section:last-child {
+    width: 95%;
+    margin: 2.5%;
+    min-height: 50px;
+}
+
+section h3 {
+    text-transform: capitalize;
+}
+
+@media (max-width: 768px) {
+    section {
+        width: 95%;
+        margin: 2.5%;
+        min-height: 50px;
+    }
+    nav img {
+        display: block;
+        margin: 0px 35%;
+        padding-top: 50px;
+    }
+    #main {
+        min-height: 400px;
+    }
+    #about-info {
+        width: 80%;
+        margin: 10%;
+        margin-top: 5%;
+        background: none;
+        display: block;
+        box-shadow: 0 0 25px 15px black;
+    }
+    article {
+        width: 90%;
+        background: whitesmoke;
+        box-shadow: 0 0 15px 10px black;
+    }
+    aside {
+        width: 90%;
+        background: whitesmoke;
+        box-shadow: 0 0 15px 10px black;
+    }
+    #about-info:hover {
+        box-shadow: none;
+    }
+}

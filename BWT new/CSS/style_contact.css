@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #2B373D;
+    background: url("../IMAGES/MilkyWay_TA-147851475.jpg");
+    background-size: 100%;
+    background-position: center;
+    animation: bgOoz 3s ease-out 0s 1 normal;
+}
+
+@keyframes bgOoz {
+    from {
+        background-size: 110%;
+    }
+    to {
+        background-size: 100%;
+    }
+}
+
+nav {
+    width: 100%;
+    background: #001C49;
+    text-align: center;
+    z-index: 10;
+}
+
+nav img {
+    display: none;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+nav ul li {
+    display: inline-flex;
+    margin: 10px;
+    padding: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+    font-weight: bold;
+    border-radius: 7px;
+}
+
+#active,
+nav ul li:hover {
+    background: rgb(14, 48, 102);
+}
+
+.sub_menu {
+    display: none;
+    z-index: 10;
+}
+
+nav ul li:hover .sub_menu {
+    display: block;
+    position: absolute;
+    background: #001C49;
+    margin-top: 35px;
+    margin-left: -20px;
+}
+
+nav ul li:hover .sub_menu ul li {
+    display: block;
+    background: transparent;
+    text-align: left;
+    border-bottom: 1px double darkslategray;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 0;
+}
+
+nav ul li:hover .sub_menu ul li:last-child {
+    border-bottom: none;
+}
+
+nav ul li:hover .sub_menu ul li a {
+    text-transform: uppercase;
+}
+
+nav ul li:hover .sub_menu ul li a:hover {
+    color: #0076D2;
+}
+
+.hover span {
+    text-align: right;
+}
+
+.sub_menu2 {
+    display: none;
+}
+
+.hover:hover .sub_menu2 {
+    display: block;
+    position: absolute;
+    margin-left: 120px;
+    background: #001C49;
+    margin-top: -45px;
+    z-index: 10;
+}
+
+#newsletter {
+    background: #1E1E1E;
+    text-align: center;
+    width: 35%;
+    margin-top: 90px;
+    padding-top: 80px;
+    padding-bottom: 60px;
+    border-radius: 70px;
+    border-bottom: 3px solid #1B286C;
+    transform: scale(0.7, 0.7);
+    opacity: 0.3;
+}
+
+#newsletter h1 {
+    font-family: cursive;
+    color: #6A88C2;
+}
+
+#newsletter p {
+    margin: 30px;
+    color: #6A88C2;
+}
+
+input[type=email] {
+    width: 40%;
+    height: 30px;
+    margin: 5px;
+    text-align: center;
+    border: none;
+    border-bottom: 2px solid #2A2A72;
+    border-radius: 15px;
+    background: transparent;
+}
+
+input[type=email]:focus {
+    width: 90%;
+    border: 2px solid lightseagreen;
+}
+
+input[type=submit] {
+    width: 20%;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    background: rgb(192, 192, 192);
+}
+
+@keyframes on {
+    from {
+        transform: scale(0.7, 0.7);
+        opacity: 0.3;
+    }
+    to {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+
+/*footer*/
+
+footer {
+    text-align: center;
+    position: static;
+    width: 100%;
+    background: #001C49;
+    font-weight: bold;
+    display: none;
+}
+
+#contact-form {
+    text-align: center;
+    background: whitesmoke;
+    margin: 5%;
+    min-height: 400px;
+    border-radius: 50px;
+    transform: scale(0.7, 0.7);
+    opacity: 0.3;
+}
+
+.forms {
+    float: left;
+    width: 40%;
+    height: 300px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.forms:first-child {
+    margin-left: 10%;
+    border-right: 1px solid grey;
+}
+
+input[type=text] {
+    width: 80%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px double #2A2A72;
+}
+
+#input-email {
+    width: 80%;
+    height: 30px;
+    margin: 0;
+    text-align: left;
+    border: none;
+    border-bottom: 2px double #2A2A72;
+    border-radius: 0;
+    background: white;
+}
+
+input[type=textarea] {
+    transform: translate(60px, 0);
+    width: 90%;
+    height: 230px;
+    overflow-x: scroll;
+}
+
+@media (max-width: 768px) {
+    footer {
+        display: block;
+    }
+    .forms {
+        width: 80%;
+        margin: 0;
+        text-align: center;
+    }
+    #contact-form {
+        padding-bottom: 30px;
+    }
+    nav img {
+        display: block;
+        margin: 0px 35%;
+        padding-top: 50px;
+    }
+    body {
+        background-size: cover;
+        animation: none;
+        background-position: center;
+    }
+    #newsletter {
+        width: 80%;
+        margin-top: 90px;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        border-radius: 70px;
+    }
+    #contact-form {
+        min-height: 500px;
+    }
+    .forms:first-child {
+        margin-left: 10%;
+        border-right: none;
+    }
+    input[type=textarea] {
+        text-align: center;
+        transform: translate(15%, 0);
+        width: 90%;
+        height: 100px;
+        overflow-y: scroll;
+    }
+}

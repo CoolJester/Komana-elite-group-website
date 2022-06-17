@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="High grade stuff">
+    <meta name="author" content="Ntsako">
+    <title>Komane Elite Group | welcome</title>
+    <link rel="shortcut icon" href="./IMAGES/Komane Elite Group Final  logo-main PNG.png">
+    <link rel="stylesheet" href="./CSS/style_index.css">
+    <script language="javascript" src="./JS/main.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <img src="./IMAGES/Komane Elite Group Final  logo-main PNG.png" width="30%" height="150px">
+        <ul>
+            <a href="#">
+                <li id="active">HOME</li>
+            </a>
+            <a href="about.html">
+                <li>ABOUT
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="about.html#about-info">INFO</a></li>
+                            <li><a href="about.html#about-info">AIM</a></li>
+                            <li><a href="about.html#last-about-section">AI</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="products.html">
+                <li>PRODUCTS
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="#"><del>Oil</del></a></li>
+                            <li><a href="#"><del>Biofuel</del></a></li>
+                            <li><a href="#"><del>Drones</del></a></li>
+                            <li><a href="#"><del>Electronical Hardware</del></a></li>
+
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="#">
+                <li> SERVICES
+                    <div class="sub_menu">
+                        <ul>
+                            <li class="hover"><a href="services_oil.html" target="_blank">oil & biofuel <span>&rightarrowtail;</span></a>
+                                <div class="sub_menu2">
+                                    <ul>
+                                        <li>
+                                            <a href="services_oil.html#section1">introduction</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_oil.html#section2">business model</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_oil.html#section3">target markets</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hover"><a href="services_IT.html">it solutions <span>&rightarrowtail;</span></a>
+                                <div class="sub_menu2">
+                                    <ul>
+                                        <li>
+                                            <a href="services_IT.html#section4">Overview</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_IT.html#section6">Journey to cloud</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_IT.html#section9">digital trasnfomations</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_IT.html#section11">access control</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_IT.html#section18">computor security</a>
+                                        </li>
+                                        <li>
+                                            <a href="services_IT.html#section20">drones</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="hover"><a href="software.html">Software Development <span>&rightarrowtail;</span></a>
+                                <div class="sub_menu2">
+                                    <ul>
+                                        <li>
+                                            <a href="software.html#">Web Development</a>
+                                        </li>
+                                        <li>
+                                            <a href="software.html#">App Development</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="#">
+                <li>CONTACT
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="newsletter.html">newsletter</a></li>
+                            <li><a href="contact.html">contact form</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+        </ul>
+    </nav>
+
+    <p id="more" onclick="visor()">MORE</p>
+
+
+    <div id="over-lay">
+        <img id="over-lay-image" src="./IMAGES/Komane Elite Group Final  logo-main PNG.png" width="300px" height="300px">
+        <h1>Partners In Biofuel & Technology</h1>
+        <p>Masters Of Impressive Intelligence In Oil & Security Surveillance</p>
+    </div>
+
+    <div id="boxes">
+		<a href="services_oil.html">
+                  <div class="box">
+            <img src="./IMAGES/Diesel-Fuel-Oil.jpg" width="100px" height="100px">
+            <h1>Oil</h1>
+            <p>An oil is any nonpolar chemical substance that is a viscous liquid at ambient temperatures and is both hydrophobic and lipophilic.</p>
+        </div>
+        </a>
+        <a href="services_oil.html#section2">
+          <div class="box">
+            <img src="./IMAGES/logo_2.png" width="100px" height="100px">
+            <h1>Biofuel</h1>
+            <p>Pyrolysis oil, sometimes also known as biocrude or bio-oil, is a synthetic fuel under investigation as substitute for petroleum.</p>
+        </div>
+         </a>
+		<a href="services_IT.html#section4">
+                  <div class="box">
+            <img src="./IMAGES/D_1.jpg" width="100px" height="100px">
+            <h1>IT Solutions</h1>
+            <p>Visual Surveillance Technology is increasingly <br> being used to monitor public and private spaces worldwide.</p>
+        </div>
+        </a>
+    </div>
+
+
+
+
+    <footer>
+        Komane Elite Group &copy 2019 Designed by <span style="color: lime;">NSK</span>
+    </footer>
+
+    <script>
+        var box = document.getElementsByClassName("box");
+        var more = document.getElementById("more");
+        var check = false;
+        var overLay = document.getElementById("over-lay");
+        var image = document.getElementById("over-lay-image");
+
+
+
+        function visor() {
+
+            if (check) {
+
+                //Animations
+
+                //boxes
+                box[0].style.animation = "unvisible 1.5s ease-in 0s 1 normal";
+                var op0 = setInterval(unperm0, 1500);
+                box[1].style.animation = "unvisible 1.5s ease-in 0.5s 1 normal";
+                var op1 = setInterval(unperm1, 2000);
+                box[2].style.animation = "unvisible 1.5s ease-in 1s 1 normal";
+                var op2 = setInterval(unperm2, 2500);
+
+                //over-lay
+                overLay.style.animation = "moveDown 2.5s ease-in 0s 1 normal";
+                var op3 = setInterval(unperm3, 1500);
+
+
+                //Making them permanent
+
+                function unperm0() {
+                    box[0].style.opacity = 0;
+                }
+
+                function unperm1() {
+                    box[1].style.opacity = 0;
+                }
+
+                function unperm2() {
+                    box[2].style.opacity = 0;
+                }
+
+                function unperm3() {
+                    overLay.style.top = "40%";
+                }
+
+                setInterval(stopper2, 2500);
+
+                function stopper2() {
+                    clearInterval(op0);
+                    clearInterval(op2);
+                    clearInterval(op1);
+                    clearInterval(op3);
+                }
+
+                more.innerHTML = "MORE";
+                image.style.animation = "constant 5s ease-in-out 0s infinite alternate";
+
+                check = false;
+            } else {
+
+                //Animations
+
+                //boxes
+                box[0].style.animation = "visible 1.5s ease-in 0s 1 normal";
+                var p0 = setInterval(perm0, 1500);
+                box[1].style.animation = "visible 1.5s ease-in 0.5s 1 normal";
+                var p1 = setInterval(perm1, 2000);
+                box[2].style.animation = "visible 1.5s ease-in 1s 1 normal";
+                var p2 = setInterval(perm2, 2500);
+
+                //The Over Lay Text
+
+                overLay.style.animation = "moveUp 2s ease-out 0s 1 normal";
+                var p3 = setInterval(perm3, 1500);
+
+                //Make the elements Permanent
+
+                function perm0() {
+                    box[0].style.opacity = 1;
+                }
+
+                function perm1() {
+                    box[1].style.opacity = 1;
+                }
+
+                function perm2() {
+                    box[2].style.opacity = 1;
+                }
+
+                function perm3() {
+                    overLay.style.top = "15%";
+                }
+
+                //Interval Stopper
+                setInterval(stopper, 2500);
+
+                function stopper() {
+                    clearInterval(p0);
+                    clearInterval(p2);
+                    clearInterval(p1);
+                    clearInterval(p3);
+                }
+
+                more.innerHTML = "LESS";
+                image.style.animation = "none";
+
+                check = true;
+            }
+        }
+    </script>
+
+
+</body>
+
+</html>

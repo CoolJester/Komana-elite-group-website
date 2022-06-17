@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="keywords" content="High grade stuff">
+    <meta name="author" content="Ntsako">
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="./IMAGES/email-logo.png">
+    <link rel="stylesheet" href="./CSS/style_contact.css">
+    <script language="javascript" src="./JS/main.js"></script>
+
+</head>
+
+<body>
+    <nav>
+        <img src="./IMAGES/Komane Elite Group Final  logo-main PNG.png" width="30%" height="150px">
+
+        <ul>
+            <a href="index.html">
+                <li>HOME</li>
+            </a>
+            <a href="about.html">
+                <li>ABOUT
+                    <div class="sub_menu">
+                        <ul>
+                            <li><a href="about.html#about-info">INFO</a></li>
+                            <li><a href="about.html#about-info">AIM</a></li>
+                            <li><a href="about.html#last-about-section">AI</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </a>
+            <a href="#">
+                <a href="products.html">
+                    <li>PRODUCTS
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="#"><del>Oil</del></a></li>
+                                <li><a href="#"><del>Biofuel</del></a></li>
+                                <li><a href="#"><del>Drones</del></a></li>
+                                <li><a href="#"><del>Electronical Hardware</del></a></li>
+
+                            </ul>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li> SERVICES
+                        <div class="sub_menu">
+                            <ul>
+                                <li class="hover"><a href="services_oil.html" target="_blank">oil & biofuel <span>&rightarrowtail;</span></a>
+                                    <div class="sub_menu2">
+                                        <ul>
+                                            <li>
+                                                <a href="services_oil.html#section1">introduction</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_oil.html#section2">business model</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_oil.html#section3">target markets</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="hover"><a href="services_IT.html">it solutions <span>&rightarrowtail;</span></a>
+                                    <div class="sub_menu2">
+                                        <ul>
+                                            <li>
+                                                <a href="services_IT.html#section4">Overview</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_IT.html#section6">Journey to cloud</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_IT.html#section9">digital trasnfomations</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_IT.html#section11">access control</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_IT.html#section18">computor security</a>
+                                            </li>
+                                            <li>
+                                                <a href="services_IT.html#section20">drones</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </a>
+                <a href="#">
+                    <li id="active">CONTACT
+                        <div class="sub_menu">
+                            <ul>
+                                <li><a href="newsletter.html">newsletter</a></li>
+                                <li><a href="#">contact form</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                </a>
+        </ul>
+    </nav>
+
+    <div id="contact-form" onmouseover="on()">
+        <form action="./PHP/contact.php" method="POST">
+            <div class="forms">
+                <img src="./IMAGES/mail_6.png" width="50px" height="50px">
+
+                <h3>Name :</h3><br>
+                <input type="text" name="name" placeholder="Enter your name(optional)"><br>
+                <h3>Email<span>*</span> :</h3><br>
+                <input type="email" name="email" placeholder="eg. info@biowealtecs.co.za" id="input-email"><br>
+                <h3>Subject<span>*</span> :</h3><br>
+                <input type="text" name="subject" list="options" placeholder="" required>
+                <datalist id="options">
+						<option value="...">
+						<option value="...">
+						<option value="...">
+                        <option value="...">
+                        <option value="...">
+						<option value="...">
+				</datalist>
+
+            </div>
+            <div class="forms">
+
+                <input type="textarea" name="message" rows="10" placeholder="Short discription of your reason of filling this contact form"><br>
+                <input type="submit" value="SEND" style="transform:translate(50px, 0)">
+
+            </div>
+        </form>
+    </div>
+
+    <footer align="left" style="padding-top: 0px; padding-bottom: 10px; background: #001C49; font-weight: bold; float:left;">
+        Komane Elite Group Group, Copyright &copy 2020 Designed by <span style="color: lime;">NSK</span>
+    </footer>
+
+    <script>
+        var contact = document.getElementById("contact-form");
+
+        setInterval(on, 20000);
+
+        function on() {
+
+            //Make the animation permanent(the intervals)
+            var p0 = setInterval(perm0, 1500);
+
+            //animation
+            contact.style.animation = "on 1.5s ease-in 0s 1 normal";
+
+            //The interval functions
+            function perm0() {
+                contact.style.transform = "scale(1, 1)";
+                contact.style.opacity = "1";
+                clearInterval(p0);
+            }
+        }
+    </script>
+</body>
+
+</html>
